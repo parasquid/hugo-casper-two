@@ -47,15 +47,15 @@
 @media (min-width: 900px) {
     .ctsingle .post-feed {
         margin-top: -70px;
-        padding-top: 0;    
-    } 
+        padding-top: 0;
+    }
     .ctsingle .site-nav {
         position: relative;
         top: -70px;
-    }    
+    }
 }
 
-@media (min-width: 795px) {  
+@media (min-width: 795px) {
     .ctsingle .post-feed p {
         font-size: 1.8rem;
         line-height: 1.55em;
@@ -65,7 +65,7 @@
 @media (max-width: 650px) {
     .hide {
         display: none !important;
-    }   
+    }
     .copyright {
         text-align: center;
     }
@@ -73,4 +73,17 @@
 
 .post-full-content pre code {
     color: #e5eff5;
-}    
+}
+
+
+section.post-full-content div.kg-card-markdown p img + em {
+    text-align: center;
+    display: block;
+    font-size: smaller;
+    margin-top: -1.5em;
+}
+
+.post-full-content li {
+    font-size: smaller;
+    line-height: 1.4em;
+}
