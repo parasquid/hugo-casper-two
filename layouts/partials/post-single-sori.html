@@ -1,4 +1,4 @@
-<article class="post-full post"> 
+<article class="post-full post">
     <header class="post-full-header">
         <section class="post-full-meta">
             <time class="post-full-meta-date" datetime="{{.Date.Format "2006-01-02"}}">{{ .Date.Format "2 January 2006" | safeHTML }}</time>{{if .Params.tags }}
@@ -7,14 +7,14 @@
         <h1 class="post-full-title">{{.Title}}</h1>
     </header>
     {{if .Params.image}}
-    <figure class="post-full-image" style="background:linear-gradient( to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8) ), url({{.Params.image | absURL}})">
+    <figure class="post-full-image" style="background:linear-gradient( to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7) ), url({{.Params.image | absURL}}); background-size: cover;">
     </figure>{{else}}
-    <figure class="post-full-image" style="background:linear-gradient( to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8) ), url({{$.Site.BaseURL}}defimg/{{ index (seq 7 | shuffle) 0 }}.jpg)">
+    <figure class="post-full-image" style="background:linear-gradient( to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7) ), url({{$.Site.BaseURL}}defimg/{{ index (seq 7 | shuffle) 0 }}.jpg); background-size: cover;">
     </figure>{{end}}
 
     <section class="post-full-content">
         <div class="kg-card-markdown">
-        {{ .Content }}    
+        {{ .Content }}
         </div>
     </section>
 
